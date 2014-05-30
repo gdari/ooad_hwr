@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Recognizer/Recognizer.iml" filepath="$PROJECT_DIR$/Recognizer/Recognizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecognizerProject.iml" filepath="$PROJECT_DIR$/RecognizerProject.iml" />
+    </modules>
+  </component>
+</project>
+

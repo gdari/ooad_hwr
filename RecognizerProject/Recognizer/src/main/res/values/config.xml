@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="penalty_threshold">20</integer>
+    <integer name="pattern_size">100</integer>
+    <integer name="k_neighbours">5</integer>
+    <integer name="points_count">30</integer>
+
+
+</resources>

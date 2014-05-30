@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingSetToolActivity"
+    android:orientation="vertical" >
+
+    <ru.nsu.ccfit.hwr.activity.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        android:layout_gravity="top"
+        android:layout_margin="4dp" />
+    <EditText
+        android:id="@+id/label"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        style="@style/AppTheme" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".TrainingSetToolActivity"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            android:typeface="monospace"
+            android:onClick="onClickOKButton"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:typeface="monospace"
+            android:onClick="onClickCancelButton"
+            />
+    </LinearLayout>
+</LinearLayout>

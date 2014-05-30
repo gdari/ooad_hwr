@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ParsedStageActivity">
+
+
+
+    <view
+        android:layout_width="157dp"
+        android:layout_height="166dp"
+        class="ru.nsu.ccfit.hwr.activity.ExpressionView"
+        android:id="@+id/parsedExpressionView"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solve_button"
+        android:typeface="monospace"
+        android:id="@+id/solve_btn"
+        android:onClick="onClickSolveButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

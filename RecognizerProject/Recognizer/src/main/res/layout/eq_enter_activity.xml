@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".EquationEnterActivity">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/equationEditText"
+        android:clickable="false"
+        android:layout_weight="1"
+        android:layout_gravity="top"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="monospace"
+            android:text="@string/eq_show"
+            android:id="@+id/show_btn"
+            android:onClick="onClickShowButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solve_button"
+            android:typeface="monospace"
+            android:id="@+id/solve_btn"
+            android:onClick="onClickSolveButton" />
+
+    </LinearLayout>
+
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        class="ru.nsu.ccfit.hwr.activity.ExpressionView"
+        android:id="@+id/expressionView"
+        android:layout_weight="1"
+        android:layout_gravity="center" />
+</LinearLayout>
